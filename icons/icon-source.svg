@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <title>note Word Counter+ Icon</title>
+  <desc>Teal rounded square with white "字" (character/word) kanji</desc>
+  <rect width="128" height="128" rx="22" ry="22" fill="#41c9b4"/>
+  <text
+    x="64"
+    y="74"
+    font-family="'Yu Gothic UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans CJK JP', 'MS Gothic', sans-serif"
+    font-size="86"
+    font-weight="700"
+    fill="#ffffff"
+    text-anchor="middle"
+    dominant-baseline="middle">字</text>
+</svg>
