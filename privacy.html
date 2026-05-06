@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+  <title>note Word Counter+ プライバシーポリシー</title>
+  <style>
+    :root {
+      --fg: #1a1a1a;
+      --muted: #555;
+      --bg: #ffffff;
+      --accent: #41c9b4;
+      --border: #e5e5e5;
+      --code-bg: #f5f7f9;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      padding: 24px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans",
+        "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+      color: var(--fg);
+      background: var(--bg);
+      line-height: 1.8;
+    }
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 32px 8px 80px;
+    }
+    h1 {
+      font-size: 1.75rem;
+      border-bottom: 3px solid var(--accent);
+      padding-bottom: 12px;
+      margin-bottom: 8px;
+    }
+    h2 {
+      font-size: 1.2rem;
+      margin-top: 2.4em;
+      margin-bottom: 0.6em;
+      padding-left: 12px;
+      border-left: 4px solid var(--accent);
+    }
+    p, li { color: var(--fg); }
+    .meta {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-bottom: 2.4em;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 1em 0;
+      font-size: 0.95rem;
+    }
+    th, td {
+      border: 1px solid var(--border);
+      padding: 10px 12px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      background: var(--code-bg);
+      font-weight: 600;
+    }
+    code {
+      background: var(--code-bg);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.92em;
+      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas,
+        "Liberation Mono", monospace;
+    }
+    strong { color: var(--fg); }
+    footer {
+      margin-top: 4em;
+      padding-top: 1.4em;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+    a { color: #1f7a6c; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>note Word Counter+ プライバシーポリシー</h1>
+  <p class="meta">最終更新日: 2026-05-06</p>
+
+  <p>
+    note Word Counter+(以下「本拡張機能」)は、ユーザーのプライバシーを最大限尊重します。
+    本ポリシーは、本拡張機能がどのような情報を扱うか、扱わないかを明確にするためのものです。
+  </p>
+
+  <h2>1. 収集する情報</h2>
+  <p>
+    本拡張機能は、<strong>いかなる個人情報・ユーザーデータも収集しません</strong>。
+    本拡張機能が保存するデータは以下のみです。
+  </p>
+  <table>
+    <thead>
+      <tr>
+        <th>データ</th>
+        <th>保存先</th>
+        <th>内容</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>表示設定</td>
+        <td>ブラウザのローカルストレージ(<code>chrome.storage.local</code>)</td>
+        <td>ウィジェット位置・フォントサイズ・表示項目・目標文字数</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>
+    上記の設定データはお使いのブラウザ内にのみ存在し、外部サーバーには一切送信されません。
+    拡張機能をアンインストールすると同時にすべて消去されます。
+  </p>
+
+  <h2>2. 外部通信</h2>
+  <p>
+    本拡張機能は、<strong>いかなる外部サーバーへのネットワーク通信も行いません</strong>。
+    <code>fetch</code>、<code>XMLHttpRequest</code>、<code>WebSocket</code> などの通信手段を一切使用しておらず、
+    完全クライアント完結で動作します。アナリティクス、トラッキング、広告ネットワーク、外部CDNからのスクリプト読み込みも一切行いません。
+  </p>
+
+  <h2>3. 第三者への情報提供</h2>
+  <p>
+    収集するデータが存在しないため、第三者への情報提供は行いません。
+    本拡張機能は、ユーザーデータの販売・移転・無関係な目的での利用を一切行いません。
+  </p>
+
+  <h2>4. 要求する権限</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>権限</th>
+        <th>用途</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>storage</code></td>
+        <td>表示位置・フォントサイズ・表示項目・目標文字数などの設定を、ブラウザのローカルストレージに保存・復元するため。</td>
+      </tr>
+      <tr>
+        <td><code>activeTab</code></td>
+        <td>現在表示中のnote.comタブでウィジェットを動作させるため。バックグラウンドで全タブを監視することはありません。</td>
+      </tr>
+      <tr>
+        <td><code>https://note.com/*</code></td>
+        <td>note.comの記事閲覧ページで本文を読み取り、文字数・読了時間を算出・表示するため。</td>
+      </tr>
+      <tr>
+        <td><code>https://editor.note.com/*</code></td>
+        <td>note公式の執筆ページがeditor.note.comサブドメインにリダイレクトされるため、執筆中のリアルタイムカウントには両ドメインへのアクセスが必須です。</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>
+    本拡張機能は <code>https://note.com/*</code> および <code>https://editor.note.com/*</code> のページにのみ動作します。
+    他のウェブサイトへのアクセス権限は持ちません。
+  </p>
+
+  <h2>5. お子様のプライバシー</h2>
+  <p>
+    本拡張機能はあらゆるユーザーが安心して利用できるよう設計されており、年齢・地域を問わず個人情報を収集することはありません。
+  </p>
+
+  <h2>6. ポリシーの変更</h2>
+  <p>
+    本ポリシーは予告なく更新されることがあります。重要な変更がある場合は、本ページの「最終更新日」を更新するとともに、
+    必要に応じて Chrome Web Store の拡張機能ページで告知します。
+  </p>
+
+  <h2>7. お問い合わせ</h2>
+  <p>
+    プライバシーポリシーに関するご質問・ご要望は、以下の連絡先までお寄せください。
+  </p>
+  <ul>
+    <li>メール: <a href="mailto:mayele48694062@gmail.com">mayele48694062@gmail.com</a></li>
+  </ul>
+
+  <footer>
+    &copy; 2026 note Word Counter+ Contributors. このポリシーは本拡張機能のためにのみ適用されます。
+  </footer>
+</main>
+</body>
+</html>

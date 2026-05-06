@@ -1,0 +1,6 @@
+auth.json
+test-profile/
+node_modules/
+*.zip
+.zip-verify/
+.zip-verify-profile/

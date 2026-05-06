@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "note Word Counter+",
+  "version": "1.0.0",
+  "description": "note執筆画面で文字数・読了時間・見出し数をリアルタイム表示する無料の執筆支援ツール",
+  "permissions": ["storage", "activeTab"],
+  "host_permissions": ["https://note.com/*", "https://editor.note.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://note.com/*", "https://editor.note.com/*"],
+      "js": ["content/widget.js", "content/content.js"],
+      "css": ["content/widget.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "popup/popup.html"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

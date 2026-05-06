@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>note Word Counter+</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">note Word Counter+</h1>
+
+    <!-- 表示位置 -->
+    <section class="section">
+      <h2 class="section-title">ウィジェット表示位置</h2>
+      <div class="radio-group" id="position-group">
+        <label class="radio-label">
+          <input type="radio" name="position" value="bottom-right" />
+          <span>右下</span>
+        </label>
+        <label class="radio-label">
+          <input type="radio" name="position" value="bottom-left" />
+          <span>左下</span>
+        </label>
+        <label class="radio-label">
+          <input type="radio" name="position" value="top-right" />
+          <span>右上</span>
+        </label>
+        <label class="radio-label">
+          <input type="radio" name="position" value="top-left" />
+          <span>左上</span>
+        </label>
+      </div>
+    </section>
+
+    <!-- フォントサイズ -->
+    <section class="section">
+      <h2 class="section-title">フォントサイズ</h2>
+      <div class="radio-group" id="fontsize-group">
+        <label class="radio-label">
+          <input type="radio" name="fontSize" value="small" />
+          <span>小</span>
+        </label>
+        <label class="radio-label">
+          <input type="radio" name="fontSize" value="medium" />
+          <span>中</span>
+        </label>
+        <label class="radio-label">
+          <input type="radio" name="fontSize" value="large" />
+          <span>大</span>
+        </label>
+      </div>
+    </section>
+
+    <!-- 表示項目 -->
+    <section class="section">
+      <h2 class="section-title">表示項目</h2>
+      <div class="checkbox-group" id="items-group">
+        <label class="checkbox-label">
+          <input type="checkbox" name="showChars" />
+          <span>文字数</span>
+        </label>
+        <label class="checkbox-label">
+          <input type="checkbox" name="showReadTime" />
+          <span>読了時間</span>
+        </label>
+        <label class="checkbox-label">
+          <input type="checkbox" name="showHeadings" />
+          <span>見出し数</span>
+        </label>
+        <label class="checkbox-label">
+          <input type="checkbox" name="showParagraphs" />
+          <span>段落数</span>
+        </label>
+        <label class="checkbox-label">
+          <input type="checkbox" name="showHashtags" />
+          <span>ハッシュタグ数</span>
+        </label>
+        <label class="checkbox-label">
+          <input type="checkbox" name="showImages" />
+          <span>画像数</span>
+        </label>
+      </div>
+    </section>
+
+    <!-- ボタン -->
+    <div class="button-group">
+      <button id="save-btn" class="btn btn-primary">保存</button>
+      <button id="reset-btn" class="btn btn-secondary">初期設定に戻す</button>
+    </div>
+
+    <!-- フィードバック -->
+    <p id="feedback" class="feedback" aria-live="polite"></p>
+
+    <!-- 他のツール -->
+    <section class="section tools-section">
+      <h2 class="section-title">他のツール</h2>
+      <div class="tools-list">
+        <a
+          href="https://chrome.google.com/webstore/detail/markdown-to-note/placeholder"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="tool-link"
+        >
+          <span class="tool-icon">📋</span>
+          <span class="tool-text">
+            <span class="tool-name">Markdown to note</span>
+            <span class="tool-desc">無料・Chrome Web Store</span>
+          </span>
+          <span class="tool-arrow">↗</span>
+        </a>
+        <a
+          href="https://note-booster.example.com/waitlist"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="tool-link"
+        >
+          <span class="tool-icon">⚡</span>
+          <span class="tool-text">
+            <span class="tool-name">note Booster</span>
+            <span class="tool-desc">公開予定・ウェイトリスト受付中</span>
+          </span>
+          <span class="tool-arrow">↗</span>
+        </a>
+      </div>
+    </section>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
